@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="description" content="Welcome to my portfolio, it's Utkarsh here! Glad to help">
+    <meta name="keywords" content="portfolio,help,portfolio ideas">
+    <title>Glad to see you there!</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.svg') }}" type="svg/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+
+
+</head>
+
+<body>
+
+
+    <!-- Loader animation -->
+    <div class="loaderwrapper">
+        <span class="loader">
+            <lottie-player src="{{ url_for('static', filename='loaderscreen.json') }}" background="transparent" speed="1"
+                loop autoplay>
+            </lottie-player>
+        </span>
+    </div>
+
+
+    <!-- welcome page -->
+
+    <!-- heading component -->
+
+    
+        <div class="main">
+            <header class="navbar">
+                <div class="menulist" id="menusmall">
+                    <ul class="querries">
+                        <li><a href="/">Home()</a></li>
+                        <li><a href="/about">About()</a></li>
+                        <li><a href="/projects">Projects()</a></li>
+                        <li><a href="/contact">Contact()</a></li>
+                    </ul>
+                </div>
+                
+               
+        </div>
+        <a href="#" id="iconbar" onclick="responsive_menu()"><i class="fas fa-bars"></i></a>
+
+        <div class="navlogo">
+            <img src="{{ url_for('static', filename='meweb.png') }}" alt="its my photo" />
+        </div>
+        </header>
+
+        <div class="name">
+            <div class="fullname">
+                <span class="welcome">UTKARSH</span>
+                <span class="portfolio">SHUKLA</span>
+
+            </div>
+
+
+            <div class="back">
+                <span class="quote">"I drink COFFEE & I do CODING"</span>
+            </div>
+        </div>
+
+        <div class="coder">
+            <!-- <span class="bg">EAT CODE REPEAT</span>
+            <span class="bg2">EAT CODE REPEAT</span> -->
+
+
+            <span class="coderanim">
+                <lottie-player src="{{ url_for('static', filename='coder.json') }}" background="transparent" speed="1"
+                    loop autoplay>
+                </lottie-player>
+            </span>
+            <div class="container2">
+                <svg id="logo" width="636" height="114" viewBox="0 0 636 114" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <!-- <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0.0960007" y="0.335999" width="636" height="113" fill="black">
+                <rect fill="white" x="0.0960007" y="0.335999" width="636" height="113"/>
+                <path d="M42.8 87.416L8.096 54.296L42.8 21.32H59.36L24.512 54.296L59.36 87.416H42.8Z"/>
+                <path d="M82.067 56.744C82.067 46.952 84.275 38.168 88.691 30.392C93.107 22.52 99.107 16.376 106.691 11.96C114.371 7.544 122.867 5.336 132.179 5.336C143.123 5.336 152.675 7.976 160.835 13.256C168.995 18.536 174.947 26.024 178.691 35.72H162.995C160.211 29.672 156.179 25.016 150.899 21.752C145.715 18.488 139.475 16.856 132.179 16.856C125.171 16.856 118.883 18.488 113.315 21.752C107.747 25.016 103.379 29.672 100.211 35.72C97.043 41.672 95.459 48.68 95.459 56.744C95.459 64.712 97.043 71.72 100.211 77.768C103.379 83.72 107.747 88.328 113.315 91.592C118.883 94.856 125.171 96.488 132.179 96.488C139.475 96.488 145.715 94.904 150.899 91.736C156.179 88.472 160.211 83.816 162.995 77.768H178.691C174.947 87.368 168.995 94.808 160.835 100.088C152.675 105.272 143.123 107.864 132.179 107.864C122.867 107.864 114.371 105.704 106.691 101.384C99.107 96.968 93.107 90.872 88.691 83.096C84.275 75.32 82.067 66.536 82.067 56.744Z"/>
+                <path d="M243.701 108.008C234.389 108.008 225.893 105.848 218.213 101.528C210.533 97.112 204.437 91.016 199.925 83.24C195.509 75.368 193.301 66.536 193.301 56.744C193.301 46.952 195.509 38.168 199.925 30.392C204.437 22.52 210.533 16.424 218.213 12.104C225.893 7.688 234.389 5.48 243.701 5.48C253.109 5.48 261.653 7.688 269.333 12.104C277.013 16.424 283.061 22.472 287.477 30.248C291.893 38.024 294.101 46.856 294.101 56.744C294.101 66.632 291.893 75.464 287.477 83.24C283.061 91.016 277.013 97.112 269.333 101.528C261.653 105.848 253.109 108.008 243.701 108.008ZM243.701 96.632C250.709 96.632 256.997 95 262.565 91.736C268.229 88.472 272.645 83.816 275.813 77.768C279.077 71.72 280.709 64.712 280.709 56.744C280.709 48.68 279.077 41.672 275.813 35.72C272.645 29.672 268.277 25.016 262.709 21.752C257.141 18.488 250.805 16.856 243.701 16.856C236.597 16.856 230.261 18.488 224.693 21.752C219.125 25.016 214.709 29.672 211.445 35.72C208.277 41.672 206.693 48.68 206.693 56.744C206.693 64.712 208.277 71.72 211.445 77.768C214.709 83.816 219.125 88.472 224.693 91.736C230.357 95 236.693 96.632 243.701 96.632Z"/>
+                <path d="M342.648 6.632C353.592 6.632 363.049 8.696 371.017 12.824C379.081 16.856 385.225 22.664 389.449 30.248C393.769 37.832 395.928 46.76 395.928 57.032C395.928 67.304 393.769 76.232 389.449 83.816C385.225 91.304 379.081 97.064 371.017 101.096C363.049 105.032 353.592 107 342.648 107H311.401V6.632H342.648ZM342.648 96.2C355.608 96.2 365.496 92.792 372.312 85.976C379.128 79.064 382.536 69.416 382.536 57.032C382.536 44.552 379.08 34.808 372.168 27.8C365.352 20.792 355.512 17.288 342.648 17.288H324.505V96.2H342.648Z"/>
+                <path d="M426.317 17.288V50.84H462.893V61.64H426.317V96.2H467.213V107H413.213V6.488H467.213V17.288H426.317Z"/>
+                <path d="M539.889 107L515.985 65.96H500.145V107H487.041V6.632H519.441C527.025 6.632 533.409 7.928 538.593 10.52C543.873 13.112 547.809 16.616 550.401 21.032C552.993 25.448 554.289 30.488 554.289 36.152C554.289 43.064 552.273 49.16 548.241 54.44C544.305 59.72 538.353 63.224 530.385 64.952L555.585 107H539.889ZM500.145 55.448H519.441C526.545 55.448 531.873 53.72 535.425 50.264C538.977 46.712 540.753 42.008 540.753 36.152C540.753 30.2 538.977 25.592 535.425 22.328C531.969 19.064 526.641 17.432 519.441 17.432H500.145V55.448Z"/>
+                <path d="M577.099 21.32H593.659L628.507 54.296L593.659 87.416H577.099L611.947 54.296L577.099 21.32Z"/>
+                </mask> -->
+                    <path d="M42.8 87.416L8.096 54.296L42.8 21.32H59.36L24.512 54.296L59.36 87.416H42.8Z" stroke="white"
+                        stroke-width="10" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M82.067 56.744C82.067 46.952 84.275 38.168 88.691 30.392C93.107 22.52 99.107 16.376 106.691 11.96C114.371 7.544 122.867 5.336 132.179 5.336C143.123 5.336 152.675 7.976 160.835 13.256C168.995 18.536 174.947 26.024 178.691 35.72H162.995C160.211 29.672 156.179 25.016 150.899 21.752C145.715 18.488 139.475 16.856 132.179 16.856C125.171 16.856 118.883 18.488 113.315 21.752C107.747 25.016 103.379 29.672 100.211 35.72C97.043 41.672 95.459 48.68 95.459 56.744C95.459 64.712 97.043 71.72 100.211 77.768C103.379 83.72 107.747 88.328 113.315 91.592C118.883 94.856 125.171 96.488 132.179 96.488C139.475 96.488 145.715 94.904 150.899 91.736C156.179 88.472 160.211 83.816 162.995 77.768H178.691C174.947 87.368 168.995 94.808 160.835 100.088C152.675 105.272 143.123 107.864 132.179 107.864C122.867 107.864 114.371 105.704 106.691 101.384C99.107 96.968 93.107 90.872 88.691 83.096C84.275 75.32 82.067 66.536 82.067 56.744Z"
+                        stroke="white" stroke-width="10" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M243.701 108.008C234.389 108.008 225.893 105.848 218.213 101.528C210.533 97.112 204.437 91.016 199.925 83.24C195.509 75.368 193.301 66.536 193.301 56.744C193.301 46.952 195.509 38.168 199.925 30.392C204.437 22.52 210.533 16.424 218.213 12.104C225.893 7.688 234.389 5.48 243.701 5.48C253.109 5.48 261.653 7.688 269.333 12.104C277.013 16.424 283.061 22.472 287.477 30.248C291.893 38.024 294.101 46.856 294.101 56.744C294.101 66.632 291.893 75.464 287.477 83.24C283.061 91.016 277.013 97.112 269.333 101.528C261.653 105.848 253.109 108.008 243.701 108.008ZM243.701 96.632C250.709 96.632 256.997 95 262.565 91.736C268.229 88.472 272.645 83.816 275.813 77.768C279.077 71.72 280.709 64.712 280.709 56.744C280.709 48.68 279.077 41.672 275.813 35.72C272.645 29.672 268.277 25.016 262.709 21.752C257.141 18.488 250.805 16.856 243.701 16.856C236.597 16.856 230.261 18.488 224.693 21.752C219.125 25.016 214.709 29.672 211.445 35.72C208.277 41.672 206.693 48.68 206.693 56.744C206.693 64.712 208.277 71.72 211.445 77.768C214.709 83.816 219.125 88.472 224.693 91.736C230.357 95 236.693 96.632 243.701 96.632Z"
+                        stroke="white" stroke-width="10" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M342.648 6.632C353.592 6.632 363.049 8.696 371.017 12.824C379.081 16.856 385.225 22.664 389.449 30.248C393.769 37.832 395.928 46.76 395.928 57.032C395.928 67.304 393.769 76.232 389.449 83.816C385.225 91.304 379.081 97.064 371.017 101.096C363.049 105.032 353.592 107 342.648 107H311.401V6.632H342.648ZM342.648 96.2C355.608 96.2 365.496 92.792 372.312 85.976C379.128 79.064 382.536 69.416 382.536 57.032C382.536 44.552 379.08 34.808 372.168 27.8C365.352 20.792 355.512 17.288 342.648 17.288H324.505V96.2H342.648Z"
+                        stroke="white" stroke-width="10" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M426.317 17.288V50.84H462.893V61.64H426.317V96.2H467.213V107H413.213V6.488H467.213V17.288H426.317Z"
+                        stroke="white" stroke-width="10" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M539.889 107L515.985 65.96H500.145V107H487.041V6.632H519.441C527.025 6.632 533.409 7.928 538.593 10.52C543.873 13.112 547.809 16.616 550.401 21.032C552.993 25.448 554.289 30.488 554.289 36.152C554.289 43.064 552.273 49.16 548.241 54.44C544.305 59.72 538.353 63.224 530.385 64.952L555.585 107H539.889ZM500.145 55.448H519.441C526.545 55.448 531.873 53.72 535.425 50.264C538.977 46.712 540.753 42.008 540.753 36.152C540.753 30.2 538.977 25.592 535.425 22.328C531.969 19.064 526.641 17.432 519.441 17.432H500.145V55.448Z"
+                        stroke="white" stroke-width="10" mask="url(#path-1-outside-1)" />
+                    <path d="M577.099 21.32H593.659L628.507 54.296L593.659 87.416H577.099L611.947 54.296L577.099 21.32Z"
+                        stroke="white" stroke-width="10" mask="url(#path-1-outside-1)" />
+                </svg>
+
+
+                <div class="abtcoder">
+                    <p class="contentcoder">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum corporis
+                        ducimus,
+                        tempora pariatur consequuntur animi qui labore voluptate accusantium quos magnam harum
+                        assumenda!
+                        Obcaecati laborum quo, delectus dolores magni ad nostrum ea qui non odio mollitia harum, aperiam
+                        quisquam quasi?</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="design">
+            <span class="designanim">
+                <lottie-player src="{{ url_for('static', filename='design.json') }}" background="transparent" speed="1"
+                    loop autoplay>
+                </lottie-player>
+            </span>
+
+            <div class="abtdesign">
+                <span class="designheading">
+                    GRAPHIC DESIGNER
+                </span>
+                <p class="contentdesign">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ducimus,
+                    tempora pariatur consequuntur animi qui labore voluptate accusantium quos magnam harum assumenda!
+                    Obcaecati laborum quo, delectus dolores magni ad nostrum ea qui non odio mollitia harum, aperiam
+                    quisquam quasi?</p>
+            </div>
+        </div>
+
+
+        <div class="center">
+            <div class="icons first">
+                <li class="social"><a href="https://www.facebook.com/profile.php?id=100053190831556"
+                        target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                <li class="social"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li class="social"><a href="https://www.instagram.com/utkrs.sukla/" target="_blank"><span
+                            class="fab fa-instagram"></span></a></li>
+                <li class="social"><a href="https://www.linkedin.com/in/utkarsh-shukla-1259b6139/" target="_blank"><span
+                            class="fab fa-linkedin-in"></span></a></li>
+                <li class="social"><a href="https://github.com/thProfessor" target="_blank"><span
+                            class="fab fa-github"></span></a></li>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy;Utkarsh Shukla Portfolio 2020 all rights reserved
+        </div>
+
+        </div>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+        <script>
+            let i = 0;
+            let arr = ["I'm still in COLLEGE"];
+
+            $(window).on("load", function () {
+                $(".loaderwrapper").delay(3000).fadeOut('slow');
+            });
+
+            $(".social").hover(function () {
+                $(this).toggleClass("shadow-1").siblings();
+                $(this).toggleClass("fill-color").siblings();
+            });
+
+
+            $(".quote").mouseover(function () {
+
+                $(".quote").text(arr[i]);
+
+            })
+            $(".quote").mouseleave(function () {
+
+                $(".quote").text("Just Another IITian");
+
+            })
+
+            $(".navlogo").mouseover(function () {
+                $(".navlogo").css({
+                    "transform": "rotate(180deg)",
+                    "transition-duration": "2s"
+                })
+            })
+
+            $(".navlogo").mouseleave(function () {
+                $(".navlogo").css({
+                    "transform": "rotate(360deg)",
+                    "transition-duration": "2s"
+                })
+            })
+
+            function responsive_menu(){
+                var e = document.getElementById("menusmall");
+                if(e.className === "menulist")
+                {
+                    e.className +=" responsive";
+                }else{
+                    e.className="menulist";
+                }
+                
+            }
+
+
+
+        </script>
+
+        <script>
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".design",
+                    start: "center bottom"
+                }
+
+            });
+            tl.from(".designheading", { x: 200, opacity: 0, duration: 1.5 })
+                .from(".contentdesign", { y: 200, opacity: 0, duration: 1.5 }, "-=1")
+
+    //   gsap.from(".bg",{x:200,duration:5,repeat:-1,repeatDelay: 1,ease:"slow"})
+    //   gsap.to(".bg",{x:0,duration:5,repeat:-1,repeatDelay: 1,opacity:0,ease:"slow"})
+
+    //   gsap.from(".bg2",{x:0,duration:5,repeat:-1,repeatDelay: 1,ease:"slow"})
+    //   gsap.to(".bg2",{x:200,duration:5,repeat:-1,repeatDelay: 1,opacity:0,ease:"slow"})
+
+
+
+
+        </script>
+
+    </body>
+
+</html>

@@ -396,8 +396,14 @@ li:nth-child(5).fill-color a {
 }
 
 @media (max-width: 600px) {
+  .welcome {
+    font-size: 60px;
+  }
+  .portfolio {
+    font-size: 58px;
+  }
   .back {
-    font-size: 30px;
+    font-size: 28px;
   }
   .center li {
     height: 50px;
@@ -410,7 +416,14 @@ li:nth-child(5).fill-color a {
 }
 
 @media (max-width: 480px) {
+  .welcome {
+    font-size: 55px;
+  }
+  .portfolio {
+    font-size: 55px;
+  }
   .back {
     font-size: 28px;
   }
 }
+

@@ -35,7 +35,7 @@ def contact():
         message = request.form.get('Comments')
         mail.send_message('New message from portfolio ', sender=email,
                           recipients=["utkrs.sukla99@gmail.com"],
-                          body=message + "/n" + name)
+                          body=message + name+" " + email)
     return render_template("contact.html")
 
 

@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/about.css">
+    <title>About me Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
 </head>
 <body>
     <header>
         <div class="photu">
-            <a href="#">
-        <img src="../static/images/meweb.png" alt="its my photo" class="navlogo">
-        </a>
+           
         <nav class="navbar">
             
            
@@ -26,20 +27,58 @@
         </nav>
     </div>
     </header>
+    <div class="contentAdult">
+   <div class="container">
+       <div class="imageBox">
+
+       <div class="imageBefore">
+           <img src="{{ url_for('static', filename='image1.jpeg') }}" alt="">
+       </div>
+       <div class="imageAfter">
+        <img src="{{ url_for('static', filename='image2.jpeg') }}" alt="">
+    </div>
+</div>
+   </div>
+
+   
+       <span class="content">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore distinctio.
+    </span>
+   </div>
+        
+       
+           
     
-
-<!-- socialicon done -->
-
-<!-- basefooter -->
     <div class="footer">
         &copy;Utkarsh Shukla Portfolio 2020 all rights reserved
     </div>
+   
+    
 
-</div>
+    
+    <script>
+         $(".navlogo").mouseover(function(){
+        $(".navlogo").css({
+            "transform":"rotate(180deg)",
+            "transition-duration": "2s"
+        })
+    })
 
-<script>$(".social").hover(function(){
-    $(this).toggleClass("shadow-1").siblings();
-    $(this).toggleClass("fill-color").siblings();
-  });</script>
+    $(".navlogo").mouseleave(function(){
+        $(".navlogo").css({
+            "transform":"rotate(360deg)",
+            "transition-duration": "2s"
+        })
+    })
+
+    $(".btn").click(function(){
+        $(".btn").text("Thanks for your text!")
+    })
+
+    $(".social").hover(function(){
+      $(this).toggleClass("shadow-1").siblings();
+      $(this).toggleClass("fill-color").siblings();
+    });
+    </script>
 </body>
 </html>

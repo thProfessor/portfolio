@@ -54,7 +54,6 @@ body {
 }
 img {
   width: 300px;
-  height: 372px;
 }
 
 .imageBox {
@@ -98,7 +97,59 @@ span {
   background-color: #171321;
   text-align: center;
 }
+.contentAdult2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: Roboto;
+}
 
+/* .color1 {
+  background-color: ;
+} */
+
+.color2 {
+  background-color: #ffde21;
+}
+
+/* .color3 {
+  background-color: ;
+} */
+
+.color4 {
+  background-color: #ffde21;
+}
+
+/* .color5 {
+  background-color: ;
+} */
+
+.color6 {
+  background-color: #ffde21;
+}
+
+/* .color7 {
+  background-color: ;
+} */
+
+.color8 {
+  background-color: #ffde21;
+}
+
+/* .color9 {
+  background-color: ;
+} */
+
+.color10 {
+  background-color: #ffde21;
+}
+
+.color12 {
+  background-color: rgb(236, 236, 236);
+}
 @media (max-width: 640px) {
   .contentAdult {
     flex-direction: column;

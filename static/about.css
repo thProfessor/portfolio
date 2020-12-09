@@ -157,4 +157,7 @@ span {
   span {
     max-width: 100%;
   }
+   .contentAdult2 {
+    flex-direction: column;
+  }
 }

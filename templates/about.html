@@ -1,84 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me Page</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
-    
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
+    <!-- <link rel="stylesheet" href="./test.css"> -->
+    <script src="{{ url_for('static', filename='p5.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='canvas.js') }}"></script>
+
 </head>
+
 <body>
     <header>
         <div class="photu">
-           
-        <nav class="navbar">
-            
-           
-            <ul class="querries">
-                <li><a href="/">Home()</a></li>
-                <li><a href="/about">About()</a></li>
-                <li><a href="/projects">Projects()</a></li>
-                <li><a href="/contact">Contact()</a></li>
-            </ul>
-        </nav>
-    </div>
+
+            <nav class="navbar">
+
+
+                <ul class="querries">
+                    <li><a href="/">Home()</a></li>
+                    <li><a href="/about">About()</a></li>
+                    <li><a href="/projects">Projects()</a></li>
+                    <li><a href="/contact">Contact()</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="contentAdult">
-   <div class="container">
-       <div class="imageBox">
+        <div class="container">
+            <div class="imageBox">
 
-       <div class="imageBefore">
-           <img src="{{ url_for('static', filename='image1.jpeg') }}" alt="">
-       </div>
-       <div class="imageAfter">
-        <img src="{{ url_for('static', filename='image2.jpeg') }}" alt="">
+                <div class="imageBefore">
+                    <img src="{{ url_for('static', filename='image1.jpeg') }}" alt="">
+                </div>
+                <div class="imageAfter">
+                    <img src="{{ url_for('static', filename='image2.jpeg') }}" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
     </div>
-</div>
-   </div>
 
-   
-       <span class="content">
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore distinctio.
-    </span>
-   </div>
-        
-       
-           
-    
+
+    <div class="contentAdult2 color1">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='google.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+
+
+    <div class="contentAdult2 color2">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='bigdata.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+    <div class="contentAdult2 color3">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='ai.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+
+
+
+
+    <div class="contentAdult2 color4">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='gsw.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+    <div class="contentAdult2 color5">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='jpmorgan.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+
+    <div class="contentAdult2 color6">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='TECHFEST.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+
+
+
+
+    <div class="contentAdult2 color7">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='escapade.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+
+    <div class="contentAdult2 color8">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='iitk.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+
+    <div class="contentAdult2 color9">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='irctc.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+
+    <div class="contentAdult2 color10">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='darshi.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+    <div class="contentAdult2 color11">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='maa.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+        <span class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est, dolore minima tempora
+            accusantium cum molestias. Consectetur numquam amet assumenda! Optio explicabo suscipit voluptatibus debitis
+            aspernatur quas nemo, aliquid quibusdam provident quaerat odit esse culpa. Accusantium nihil labore
+            distinctio.
+        </span>
+    </div>
+
+    <div class="contentAdult2 color12">
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='robo.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='MUN.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="imageBox">
+                <img src="{{ url_for('static', filename='rcplane2.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+    </div>
+
     <div class="footer">
         &copy;Utkarsh Shukla Portfolio 2020 all rights reserved
     </div>
-   
-    
 
-    
-    <script>
-         $(".navlogo").mouseover(function(){
-        $(".navlogo").css({
-            "transform":"rotate(180deg)",
-            "transition-duration": "2s"
-        })
-    })
 
-    $(".navlogo").mouseleave(function(){
-        $(".navlogo").css({
-            "transform":"rotate(360deg)",
-            "transition-duration": "2s"
-        })
-    })
 
-    $(".btn").click(function(){
-        $(".btn").text("Thanks for your text!")
-    })
 
-    $(".social").hover(function(){
-      $(this).toggleClass("shadow-1").siblings();
-      $(this).toggleClass("fill-color").siblings();
-    });
-    </script>
+
 </body>
+
 </html>

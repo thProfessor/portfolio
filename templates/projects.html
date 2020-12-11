@@ -1,45 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/projects.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Projects Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='projects.css') }}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
 </head>
+
 <body>
     <header>
         <div class="photu">
-            <a href="#">
-        <img src="../static/images/meweb.png" alt="its my photo" class="navlogo">
-        </a>
-        <nav class="navbar">
-            
-           
-            <ul class="querries">
-                <li><a href="/">Home()</a></li>
-                <li><a href="/about">About()</a></li>
-                <li><a href="/projects">Projects()</a></li>
-                <li><a href="/contact">Contact()</a></li>
-            </ul>
-        </nav>
-    </div>
+
+            <nav class="navbar">
+
+
+                <ul class="querries">
+                    <li><a href="/">Home()</a></li>
+                    <li><a href="/about">About()</a></li>
+                    <li><a href="/projects">Projects()</a></li>
+                    <li><a href="/contact">Contact()</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
 
-<!-- socialicon done -->
+    <section>
+        <h1>PROJECTS & POR'S</h1>
+        <div class="bgPulse">
 
-<!-- basefooter -->
-    <div class="footer">
-        &copy;Utkarsh Shukla Portfolio 2020 all rights reserved
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content">
+            <img src="{{ url_for('static', filename='mte.jpg') }}" alt="certi">
+            <div class="content2">
+                <h2>Internship</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis sed et repudiandae
+                    illo possimus placeat nostrum fugiat maiores impedit!</p>
+            </div>
+        </div>
+
+        <div class="content" style="background-color: white;">
+            <img src="{{ url_for('static', filename='siyahi.png') }}" alt="certi">
+            <div class="content2">
+                <h2>Internship</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis sed et repudiandae
+                    illo possimus placeat nostrum fugiat maiores impedit!</p>
+            </div>
+        </div>
+
+        <div class="content" style="background-color: #f44336;">
+            <img src="../static/siyahi.png" alt="certi">
+            <div class="content2">
+                <h2>Full Stack(Node.js)</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis sed et repudiandae
+                    illo possimus placeat nostrum fugiat maiores impedit!</p>
+            </div>
+        </div>
+
+        <div class="content" style="background-color: white;">
+            <img src="../static/siyahi.png" alt="certi">
+            <div class="content2">
+                <h2>Full Stack(Flask)</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis sed et repudiandae
+                    illo possimus placeat nostrum fugiat maiores impedit!</p>
+            </div>
+        </div>
+
+
+
+        <div class="content" style="background-color: #03a9f4;">
+            <img src="../static/siyahi.png" alt="certi">
+            <div class="content2">
+                <h2>Google Chrome Extensions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis sed et repudiandae
+                    illo possimus placeat nostrum fugiat maiores impedit!</p>
+            </div>
+        </div>
+
+        <div class="content" style="background-color: white;">
+            <img src="../static/siyahi.png" alt="certi">
+            <div class="content2">
+                <h2>Finance</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis sed et repudiandae
+                    illo possimus placeat nostrum fugiat maiores impedit!</p>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;Utkarsh Shukla Portfolio 2020 all rights reserved
+        </div>
     </div>
 
-</div>
 
-<script>$(".social").hover(function(){
-    $(this).toggleClass("shadow-1").siblings();
-    $(this).toggleClass("fill-color").siblings();
-  });</script>
+
+
+
+
+
 </body>
+
 </html>

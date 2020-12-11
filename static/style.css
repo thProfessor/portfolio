@@ -397,13 +397,13 @@ li:nth-child(5).fill-color a {
 
 @media (max-width: 600px) {
   .welcome {
-    font-size: 65px;
+    font-size: 70px;
   }
   .portfolio {
-    font-size: 64px;
+    font-size: 70px;
   }
   .back {
-    font-size: 25px;
+    font-size: 23px;
   }
   .center li {
     height: 50px;

@@ -213,19 +213,7 @@
 
             })
 
-            $(".navlogo").mouseover(function () {
-                $(".navlogo").css({
-                    "transform": "rotate(180deg)",
-                    "transition-duration": "2s"
-                })
-            })
-
-            $(".navlogo").mouseleave(function () {
-                $(".navlogo").css({
-                    "transform": "rotate(360deg)",
-                    "transition-duration": "2s"
-                })
-            })
+           
 
             function responsive_menu(){
                 var e = document.getElementById("menusmall");
@@ -288,6 +276,10 @@
                 chatbot = select(".chatbot");
                 chatbot.style("display", "block");
                 chatbot.style("visibility", "visible");
+                  $(".navlogo").css({
+                    "transform": "rotate(180deg)",
+                    "transition-duration": "2s"
+                })
             }
 
             button.mousePressed(chat);

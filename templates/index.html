@@ -268,7 +268,7 @@
             noCanvas();
 
             let bot = new RiveScript();
-            bot.loadFile("../static/uttu.rive", uttuReady, uttuError);
+            bot.loadFile("{{ url_for('static', filename='uttu.rive') }}", uttuReady, uttuError);
             let voice = new p5.Speech();
 
             function uttuReady() {

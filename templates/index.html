@@ -15,7 +15,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
+   <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="{{ url_for('static', filename='p5.speech.js') }}"></script> 
 
 
 </head>
@@ -53,9 +56,21 @@
         </div>
         <a href="#" id="iconbar" onclick="responsive_menu()"><i class="fas fa-bars"></i></a>
 
-        <div class="navlogo">
-            <img src="{{ url_for('static', filename='meweb.png') }}" alt="its my photo" />
-        </div>
+         <div class="navlogo">
+        <img src="{{ url_for('static', filename='meweb.png') }}" alt="its my photo" />
+    </div>
+
+    <div class="chatbot">
+        <h1>Uttu ChatBot</h1>
+        <p>
+            You: <input id="user_input" placeholder="type something to chat"></input>
+            <button id="submit">say</button>
+        </p>
+
+        <p>
+            Uttu: <span id="output"></span>
+        </p>
+    </div>
         </header>
 
         <div class="name">
@@ -248,6 +263,46 @@
 
 
         </script>
+    <script>
+        function setup() {
+            noCanvas();
+
+            let bot = new RiveScript();
+            bot.loadFile("../static/uttu.rive", uttuReady, uttuError);
+            let voice = new p5.Speech();
+
+            function uttuReady() {
+                bot.sortReplies();
+            }
+            function uttuError() {
+
+                console.log("error");
+            }
+            let trigger = select(".navlogo");
+            let button = select("#submit");
+            let user_input = select("#user_input");
+            let output = select("#output");
+
+            trigger.mousePressed(open);
+            function open() {
+                chatbot = select(".chatbot");
+                chatbot.style("display", "block");
+                chatbot.style("visibility", "visible");
+            }
+
+            button.mousePressed(chat);
+
+            function chat() {
+                let input = user_input.value();
+                bot.reply("local-user", input).then(function (reply) {
+                    output.html(reply);
+                    voice.speak(reply);
+                    user_input.value("");
+                });
+            }
+        }
+    </script>
+
 
     </body>
 

@@ -75,7 +75,8 @@
 }
 
 #user_input {
-  width: 137px;
+  width: 200px;
+  padding:5px;
   height: 33px;
   border-radius: 40px;
   border-color: yellow;
@@ -84,13 +85,16 @@
 }
 #output {
   width: 200px;
-  padding: 5px;
   height: 33px;
   border: 2px solid yellow;
   border-radius: 40px;
   font-size: 13px;
   color: orange;
   padding: 8px;
+}
+
+p {
+  overflow: hidden;
 }
 
 .chatbot {
@@ -101,6 +105,8 @@
   visibility: hidden;
   display: none;
   background-color: #ffe742;
+  overflow: hidden;
+  text-align: center;
 }
 
 

@@ -83,7 +83,8 @@
   color: orange;
 }
 #output {
-  width: 150px;
+  width: 200px;
+  padding: 5px;
   height: 33px;
   border: 2px solid yellow;
   border-radius: 40px;
@@ -99,6 +100,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   visibility: hidden;
   display: none;
+  background-color: #ffe742;
 }
 
 

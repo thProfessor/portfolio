@@ -74,9 +74,10 @@
   height: 200px;
 }
 
+
 #user_input {
   width: 200px;
-  padding:5px;
+  padding: 5px;
   height: 33px;
   border-radius: 40px;
   border-color: yellow;

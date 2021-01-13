@@ -200,11 +200,8 @@
 
 
             $(".quote").cLick(function () {
-                if(i<arr.length){
-                $(".quote").text(arr[i]);
-                    i++;
-                }else{
-                    i=0;
+                for( let val of arr){
+                $(".quote").text(val);
                 }
 
             })

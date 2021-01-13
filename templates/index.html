@@ -187,7 +187,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
         <script>
             let i = 0;
-            let arr = ["I'm still in COLLEGE"];
+            let arr = ["Creating magical STUFF","Do Write ME","Talk to Bot for help!","Click my FACE","I drink COFFEE & I do CODING"];
 
             $(window).on("load", function () {
                 $(".loaderwrapper").delay(3000).fadeOut('slow');
@@ -199,14 +199,18 @@
             });
 
 
-            $(".quote").mouseover(function () {
-
+            $(".quote").cLick(function () {
+                if(i<arr.length){
                 $(".quote").text(arr[i]);
+                    i++;
+                }else{
+                    i=0;
+                }
 
             })
             $(".quote").mouseleave(function () {
 
-                $(".quote").text("Just Another IITian");
+                $(".quote").text("Hover Over");
 
             })
 

@@ -202,7 +202,9 @@
             $(".quote").mouseover(function () {
 
             $(".quote").text(arr[i]);
-                i++;
+                if(i<arr.length){
+                i++;}
+                else i=0;
 
         })
        
@@ -240,11 +242,11 @@
             tl.from(".designheading", { x: 200, opacity: 0, duration: 1.5 })
                 .from(".contentdesign", { y: 200, opacity: 0, duration: 1.5 }, "-=1")
 
-    //   gsap.from(".bg",{x:200,duration:5,repeat:-1,repeatDelay: 1,ease:"slow"})
-    //   gsap.to(".bg",{x:0,duration:5,repeat:-1,repeatDelay: 1,opacity:0,ease:"slow"})
+      gsap.from(".bg",{x:200,duration:5,repeat:-1,repeatDelay: 1,ease:"slow"})
+      gsap.to(".bg",{x:0,duration:5,repeat:-1,repeatDelay: 1,opacity:0,ease:"slow"})
 
-    //   gsap.from(".bg2",{x:0,duration:5,repeat:-1,repeatDelay: 1,ease:"slow"})
-    //   gsap.to(".bg2",{x:200,duration:5,repeat:-1,repeatDelay: 1,opacity:0,ease:"slow"})
+      gsap.from(".bg2",{x:0,duration:5,repeat:-1,repeatDelay: 1,ease:"slow"})
+      gsap.to(".bg2",{x:200,duration:5,repeat:-1,repeatDelay: 1,opacity:0,ease:"slow"})
 
 
 

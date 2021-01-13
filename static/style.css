@@ -457,13 +457,16 @@ li:nth-child(5).fill-color a {
 
 @media (max-width: 480px) {
   .welcome {
-    font-size: 55px;
+    font-size: 65px;
   }
   .portfolio {
-    font-size: 55px;
+    font-size: 65px;
   }
   .back {
     font-size: 25px;
+  }
+   .abtdesign p{
+    margin-bottom: 10px;
   }
 }
 

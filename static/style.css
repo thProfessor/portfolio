@@ -434,10 +434,10 @@ li:nth-child(5).fill-color a {
 
 @media (max-width: 600px) {
   .welcome {
-    font-size: 70px;
+    font-size: 80px;
   }
   .portfolio {
-    font-size: 70px;
+    font-size: 80px;
   }
   .back {
     font-size: 23px;

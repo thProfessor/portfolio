@@ -450,6 +450,9 @@ li:nth-child(5).fill-color a {
     line-height: 60px;
     font-size: 25px;
   }
+  .abtdesign p{
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px) {
